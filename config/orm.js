@@ -69,7 +69,7 @@ connection.query(queryString, vals, function(err, result) {
 });
 },
 updateOne: function(table, objColVals, condition, cb) {
-var queryString = "UPDATE " + table;
+var queryString = " UPDATE " + table;
 
 queryString += " SET ";
 queryString += objToSql(objColVals);
@@ -83,6 +83,18 @@ connection.query(queryString, function(err, result) {
     }
     cb(result);
 });
+},
+delete: function(table, condition, cb) {
+var queryString = "DELETE FROM " + table;
+queryString += " WHERE ";
+queryString += condition;
+connection.query(queryString, function(err, result) {
+    if (err) {
+        throw err;
+    }
+    cb(result);
+});
+
 }
 
 };

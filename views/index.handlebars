@@ -1,0 +1,36 @@
+<h1>CODE BURGER!</h1>
+<h2>Serving Up Fresh Code Daily!</h2>
+
+<h3>Ready to Eat!</h3>
+
+<ol>
+    {{#each burgers}}
+    {{#unless devoured}}
+    {{> burgers/burger-block devoured=false}}
+    {{/unless}}
+    {{/each}}
+</ol>
+
+<h3>Devoured Burgers!</h3>
+
+<ol>
+    {{#each burgers}}
+    {{#if devoured}}
+    <p>
+        {{> burgers/trash-block devoured=true}}
+    </p>
+    {{/if}}
+    {{/each}}
+</ol>
+
+<h2>Make a Burger!</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="bn">Order Here: </label>
+        <input type="text" id="bn" name="burger_name" placeholder="Burger Name Here">
+    </div>
+
+<button type="submit">Order Up!</button>
+
+</form>
