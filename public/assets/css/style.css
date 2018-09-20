@@ -1,7 +1,29 @@
-h1, h2 {
-    text-align: center;
+h3, h5 {
+    font-family: 'Lato', sans-serif;
+
+}
+
+header {
+text-align: center;
+}
+
+h1, h4 {
+    font-family: 'Atomic Age', cursive;
 }
 
 li {
-    font-size: 25px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+#name-burger {
+    text-align: center;
+}
+
+#ready-eat {
+    text-align: center;
+}
+
+#devoured-burgers {
+    text-align: center;
 }

@@ -1,36 +1,58 @@
-<h1>CODE BURGER!</h1>
-<h2>Serving Up Fresh Code Daily!</h2>
+<div class="container">
+    <header>
+        <h3>Welcome</h3>
+        <p>to</p>
+        <h1>CODE BURGER</h1>
+        <h5>"Serving Up Fresh Code Daily!"</h5>
+    </header>
 
-<h3>Ready to Eat!</h3>
+    <div class="row">
+        <div id="name-burger" class="twelve columns">
 
-<ol>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-    {{/each}}
-</ol>
+            <form class="create-form">
 
-<h3>Devoured Burgers!</h3>
+                <div class="form-group">
+                    <label for="bn">Order Here</label>
+                    <input type="text" id="bn" name="burger_name" placeholder="Burger Name Here">
+                </div>
 
-<ol>
-    {{#each burgers}}
-    {{#if devoured}}
-    <p>
-        {{> burgers/trash-block devoured=true}}
-    </p>
-    {{/if}}
-    {{/each}}
-</ol>
+                <button type="submit">Order Up!</button>
 
-<h2>Make a Burger!</h2>
-<form class="create-form">
+            </form>
 
-    <div class="form-group">
-        <label for="bn">Order Here: </label>
-        <input type="text" id="bn" name="burger_name" placeholder="Burger Name Here">
+        </div>
     </div>
 
-<button type="submit">Order Up!</button>
 
-</form>
+
+    <div class="row">
+        <div id="ready-eat" class="six columns">
+            <h4>Ready to Eat</h4>
+
+            <ol>
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-block devoured=false}}
+                {{/unless}}
+                {{/each}}
+            </ol>
+        </div>
+
+
+        <div id="devoured-burgers" class="six columns">
+            <h4>Devoured Burgers</h4>
+
+            <ol>
+                {{#each burgers}}
+                {{#if devoured}}
+                <p>
+                    {{> burgers/trash-block devoured=true}}
+                </p>
+                {{/if}}
+                {{/each}}
+            </ol>
+
+        </div>
+    </div>
+
+</div>
