@@ -1,58 +1,87 @@
 <div class="container">
-    <header>
-        <h3>Welcome</h3>
-        <p>to</p>
-        <h1>CODE BURGER</h1>
-        <h5>"Serving Up Fresh Code Daily!"</h5>
-    </header>
-
     <div class="row">
-        <div id="name-burger" class="twelve columns">
+        <div class="twelve columns">
+            <header>
+                <br>
+                <h1 id="name-border" class="neon" data-text="Code/Burger">Code/Burger</h1>
+            </header>
+        </div>
+    </div>
+    <div class="row tag-row">
+        <div class="twelve columns">
+            <p id="tag-line">"Serving Up Fresh Code Daily!"</p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div id = "neon-burger-1"class="four columns">
+            <img src="/assets/img/neon-burger.png">
+        </div>
+        <div id="name-burger" class="four columns blurred-bg-container">
+            <div class="content">
+                <form class="create-form">
 
-            <form class="create-form">
+                    <div class="form-group">
+                        <label for="bn">
+                            <h4>Order Here</h4>
+                        </label>
+                        <input type="text" id="bn" name="burger_name" placeholder="Burger Name Here">
+                    </div>
 
-                <div class="form-group">
-                    <label for="bn">Order Here</label>
-                    <input type="text" id="bn" name="burger_name" placeholder="Burger Name Here">
-                </div>
+                    <button id="order-up" type="submit">Order Up!</button>
 
-                <button type="submit">Order Up!</button>
-
-            </form>
-
+                </form>
+            </div>
+        </div>
+        <div id = "neon-burger-2" class="four columns">
+            <img src="/assets/img/neon-burger.png">
         </div>
     </div>
 
-
+    <br>
 
     <div class="row">
-        <div id="ready-eat" class="six columns">
-            <h4>Ready to Eat</h4>
+        <div id="ready-eat" class="six columns blurred-bg-container">
+            <div class="content">
+                <h4>Ready to Eat</h4>
 
-            <ol>
-                {{#each burgers}}
-                {{#unless devoured}}
-                {{> burgers/burger-block devoured=false}}
-                {{/unless}}
-                {{/each}}
-            </ol>
+                <ol>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                    {{/unless}}
+                    {{/each}}
+                </ol>
+            </div>
         </div>
 
 
-        <div id="devoured-burgers" class="six columns">
-            <h4>Devoured Burgers</h4>
+        <div id="devoured-burgers" class="six columns blurred-bg-container">
+            <div class="content">
+                <h4>Devoured Burgers</h4>
 
-            <ol>
-                {{#each burgers}}
-                {{#if devoured}}
-                <p>
-                    {{> burgers/trash-block devoured=true}}
-                </p>
-                {{/if}}
-                {{/each}}
-            </ol>
+                <ol>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <p>
+                        {{> burgers/trash-block devoured=true}}
+                    </p>
+                    {{/if}}
+                    {{/each}}
+                </ol>
 
+            </div>
         </div>
     </div>
 
+    <div class="row">
+        <div class="twelve columns">
+            >
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <h5 class="footer-text">Code/Burger &#169; 2018 </h5>
 </div>

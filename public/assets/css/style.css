@@ -1,19 +1,135 @@
-h3, h5 {
-    font-family: 'Lato', sans-serif;
+body {
+    background: url("../img/burger-backgroundBW.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
+h3,
+h5 {
+    font-family: 'Josefin Slab', serif;
 }
 
 header {
-text-align: center;
+    text-align: center;
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 65px;
 }
 
-h1, h4 {
-    font-family: 'Atomic Age', cursive;
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: ghostwhite;
+}
+
+.footer-text {
+    margin: auto;
+    padding: 5px;
+    font-family: 'Fontdiner Swanky', cursive;
+}
+
+h1 {
+    letter-spacing: 55px;
+}
+
+
+#name-border {
+    box-sizing: border-box;
+    border: double #FEF804;
+    border-width: 10px;
+    border-radius: 10px;
+}
+
+h4 {
+    font-family: 'Fontdiner Swanky', cursive;
+    padding: 10px;
+    color: #39FF14;
+}
+
+label {
+    color: ghostwhite;
+    font-family: 'Josefin Slab', serif;
 }
 
 li {
     font-size: 18px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Josefin Slab', serif;
+    color: ghostwhite;
+}
+
+/*==============Buttons Start===============*/
+.devour_burger {
+    font-family: 'Josefin Slab', serif;
+    color: #FBFBFB;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid #FBFBFB;
+    transition: all 0.2s;
+    outline: none;
+    font-weight: bold;
+}
+
+.devour_burger:hover {
+    font-family: 'Josefin Slab', serif;
+    color: #FEF804;
+    border-color:#FEF804;
+    box-shadow: 0px 0px 4px 0px #FBFBFB;
+}
+
+.delete {
+    font-family: 'Josefin Slab', serif;
+    color: #FBFBFB;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid #FBFBFB;
+    transition: all 0.2s;
+    outline: none;
+    font-weight: bold;
+}
+
+.delete:hover {
+    font-family: 'Josefin Slab', serif;
+    color: #FEF804;
+    border-color:#FEF804;
+    box-shadow: 0px 0px 4px 0px #FBFBFB;
+}
+
+#order-up {
+    background: #c5bfbf;
+    font-family: 'Josefin Slab', serif;
+    color: #FBFBFB;
+}
+
+#order-up:hover {
+    background: #c5bfbf;
+    font-family: 'Josefin Slab', serif;
+    color: ghostwhite;
+}
+
+/*===========Buttons End==============*/
+
+#tag-line {
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: ghostwhite;
+    letter-spacing: 10px;
+}
+
+.tag-row {
+    padding: 65px;
+}
+
+#burger-header {
+    vertical-align: middle;
 }
 
 #name-burger {
@@ -26,4 +142,79 @@ li {
 
 #devoured-burgers {
     text-align: center;
+}
+
+
+/*==========Neon Effect Start===============*/
+.neon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 20px;
+    color: #fff;
+    text-shadow: 0 0 20px #FBFBFB;
+}
+
+.neon:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: -1;
+    color: #FF0000;
+    filter: blur(15px);
+}
+
+.neon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF0000(55, 255, 20, 0.685);
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
+}
+
+/*============Neon Effect End==============*/
+
+/*============Neon Burger Start===========*/
+img {
+    width: 200px;
+    height: 200px;
+}
+
+#neon-burger-1 {
+    text-align: center;
+}
+
+#neon-burger-2 {
+    text-align: center;
+}
+
+/*============Neon Burger Start===========*/
+
+/*============Blurred Background Effect Start =============*/
+.blurred-bg-container {
+    background: rgba(8, 8, 8, 0.452);
+    border-radius: 10px;
+}
+
+/*============Blurred Background Effect End =============*/
+
+/*Media Queries*/
+@media (max-width: 950px) {
+    h1 {
+        letter-spacing: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        letter-spacing: 0px;
+    }
 }
