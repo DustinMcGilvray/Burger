@@ -5,10 +5,34 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-
-h3,
-h5 {
+h1 {
+    letter-spacing: 55px;
+}
+h3,h5 {
     font-family: 'Josefin Slab', serif;
+}
+h4 {
+    font-family: 'Fontdiner Swanky', cursive;
+    padding: 10px;
+    color: #39FF14;
+}
+label {
+    color: ghostwhite;
+    font-family: 'Josefin Slab', serif;
+}
+li {
+    font-size: 24px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    color: ghostwhite;
+}
+
+/*=========Header Section Start=============*/
+#name-border {
+    box-sizing: border-box;
+    border: double #FEF804;
+    border-width: 10px;
+    border-radius: 10px;
 }
 
 header {
@@ -17,6 +41,25 @@ header {
     font-size: 65px;
 }
 
+#tag-line {
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: ghostwhite;
+    letter-spacing: 10px;
+}
+
+.tag-row {
+    padding: 65px;
+}
+
+#burger-header {
+    vertical-align: middle;
+}
+/*=========Header Section End=============*/
+
+/*=========Footer Section Start==========*/
 .footer {
     position: fixed;
     left: 0;
@@ -30,35 +73,8 @@ header {
     padding: 5px;
     font-family: 'Fontdiner Swanky', cursive;
 }
+/*=========Footer Section End==========*/
 
-h1 {
-    letter-spacing: 55px;
-}
-
-
-#name-border {
-    box-sizing: border-box;
-    border: double #FEF804;
-    border-width: 10px;
-    border-radius: 10px;
-}
-
-h4 {
-    font-family: 'Fontdiner Swanky', cursive;
-    padding: 10px;
-    color: #39FF14;
-}
-
-label {
-    color: ghostwhite;
-    font-family: 'Josefin Slab', serif;
-}
-
-li {
-    font-size: 18px;
-    font-family: 'Josefin Slab', serif;
-    color: ghostwhite;
-}
 
 /*==============Buttons Start===============*/
 .devour_burger {
@@ -78,7 +94,7 @@ li {
     font-family: 'Josefin Slab', serif;
     color: #FEF804;
     border-color:#FEF804;
-    box-shadow: 0px 0px 4px 0px #FBFBFB;
+    box-shadow: 0px 0px 4px 0px #39FF14;
 }
 
 .delete {
@@ -98,40 +114,31 @@ li {
     font-family: 'Josefin Slab', serif;
     color: #FEF804;
     border-color:#FEF804;
-    box-shadow: 0px 0px 4px 0px #FBFBFB;
+    box-shadow: 0px 0px 4px 0px #39FF14;
 }
 
 #order-up {
-    background: #c5bfbf;
     font-family: 'Josefin Slab', serif;
     color: #FBFBFB;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid #FBFBFB;
+    transition: all 0.2s;
+    outline: none;
+    font-weight: bold;
 }
 
 #order-up:hover {
-    background: #c5bfbf;
     font-family: 'Josefin Slab', serif;
-    color: ghostwhite;
+    color: #FEF804;
+    border-color:#FEF804;
+    box-shadow: 0px 0px 4px 0px#39FF14;
 }
-
 /*===========Buttons End==============*/
 
-#tag-line {
-    font-family: 'Josefin Slab', serif;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    color: ghostwhite;
-    letter-spacing: 10px;
-}
-
-.tag-row {
-    padding: 65px;
-}
-
-#burger-header {
-    vertical-align: middle;
-}
-
+/*==========Database Populating Start=========*/
 #name-burger {
     text-align: center;
 }
@@ -143,7 +150,7 @@ li {
 #devoured-burgers {
     text-align: center;
 }
-
+/*============Database Populating End===========*/
 
 /*==========Neon Effect Start===============*/
 .neon {
