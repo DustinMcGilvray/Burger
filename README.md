@@ -28,6 +28,10 @@ Let's Eat!
 * [Body Parser](https://www.npmjs.com/package/body-parser)
 * [Nodemon](https://www.npmjs.com/package/nodemon)
 
+### Hosting
+---
+* [Heroku](https://www.heroku.com/)
+
 
 ### Authors
 ---
