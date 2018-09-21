@@ -1,13 +1,10 @@
 <p align="center">
-  <img src = /goonies_header.jpg/>
+  <img src = public/assets/img/burger_header.jpg/>
 </p>
 
 ## Overview
 A Compatibility-Based "Friend Finder" application that takese in results from the users' survey answers and compares their answers with those from other users. Once the comparison is complete, an image and name will be delivered via Modal with the best match.
 
-<p align="center">
-  <img src = markdown/the-goonies-oath.jpg/>
-</p>
 
 Will you be matched with your favorite Goonie?
 
