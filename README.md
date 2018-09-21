@@ -1,28 +1,36 @@
 <p align="center">
-  <img src = /goonies_header.jpg/>
+  <img src = public/assets/img/burger_header.jpg/>
 </p>
 
 ## Overview
-A Compatibility-Based "Friend Finder" application that takese in results from the users' survey answers and compares their answers with those from other users. Once the comparison is complete, an image and name will be delivered via Modal with the best match.
+The Code/Burger Restaurant App allows user's to enter burger names that they would like to eat. The newly named burger is then displayed in the 'Ready to Eat' column on the left with a 'Devour it' Button. With a click of the button, the burger is removed from the 'Ready-to-Eat' column and displayed in the 'Devoured Burgers' Column. The user is then given the option to 'Trash It' with another button. 
+All of the burger names, whether devoured or not, are saved persistently using a MySQL database. 
 
-<p align="center">
-  <img src = markdown/the-goonies-oath.jpg/>
-</p>
-
-Will you be matched with your favorite Goonie?
+Let's Eat!
 
 ### Crafted With
 ---
+* [Skeleton Framework](http://getskeleton.com/#intro)
 * Node.JS
+* Handlebars.JS
+* Express.JS
+* Homemade ORM (Object Relational Mapping)
+* [MySQL Workbench](https://www.mysql.com/)
 * JavaScript
-* Visual Studio
+* [Visual Studio Code](https://code.visualstudio.com/)
 * GitBash
+* MVC (Model-View_Controller) Design Pattern
 
 ### NPM'S
 ---
 * [Express](https://www.npmjs.com/package/express)
-* [Path](https://www.npmjs.com/package/path)
+* [Handlebars](http://handlebarsjs.com/)
 * [Body Parser](https://www.npmjs.com/package/body-parser)
+* [Nodemon](https://www.npmjs.com/package/nodemon)
+
+### Hosting
+---
+* [Heroku](https://www.heroku.com/)
 
 
 ### Authors
