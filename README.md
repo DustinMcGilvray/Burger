@@ -19,7 +19,7 @@ Let's Eat!
 * JavaScript
 * [Visual Studio Code](https://code.visualstudio.com/)
 * GitBash
-* MVC (Model-View_Controller) Design Pattern
+* MVC (Model-View-Controller) Design Pattern
 
 ### NPM'S
 ---
