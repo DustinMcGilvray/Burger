@@ -15,7 +15,7 @@ Let's Eat!
 * Handlebars.JS
 * Express.JS
 * Homemade ORM (Object Relational Mapping)
-* [MySQL Workbench](https://www.mysql.com/)
+* [MySQL](https://www.mysql.com/)
 * JavaScript
 * [Visual Studio Code](https://code.visualstudio.com/)
 * GitBash
